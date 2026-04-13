@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Kumar Gupta | Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --bg-color: #080808;
+            --card-bg: #121212;
+            --accent: #A855F7;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .heading-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        .bento-card {
+            background: linear-gradient(145deg, #121212 0%, #0d0d0d 100%);
+            border: 1px solid #1f1f1f;
+            border-radius: 2rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bento-card:hover {
+            border-color: #4b4b4b;
+            transform: scale(1.01);
+            box-shadow: 0 20px 40px -20px rgba(0,0,0,0.7);
+        }
+
+        .violet-glow {
+            box-shadow: 0 0 60px -15px rgba(168, 85, 247, 0.15);
+        }
+
+        .custom-gradient {
+            background: linear-gradient(135deg, #A855F7 0%, #6366F1 100%);
+        }
+
+        nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-2xl bg-white/5 border border-white/10 px-6 py-3 rounded-full flex justify-between items-center">
+        <div class="text-sm font-bold tracking-tighter heading-font">ASHUTOSH<span class="text-purple-500">.G</span></div>
+        <div class="hidden md:flex gap-8 text-[11px] uppercase tracking-[0.2em] font-bold text-gray-400">
+            <a href="#" class="hover:text-white transition">Home</a>
+            <a href="#work" class="hover:text-white transition">Work</a>
+            <a href="mailto:guitarakash87@gmail.com" class="hover:text-white transition">Contact</a>
+        </div>
+        <div class="text-[10px] font-bold text-green-500 flex items-center gap-2">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> HIRE ME
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="max-w-7xl mx-auto pt-28 px-4 pb-12 space-y-6">
+        
+        <!-- SECTION 1: HERO & PROFILE -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            
+            <!-- Hero Card -->
+            <div class="lg:col-span-8 bento-card p-8 md:p-14 flex flex-col justify-between violet-glow">
+                <div class="relative z-10">
+                    <h1 class="heading-font text-5xl md:text-7xl font-extrabold leading-[1.05] mb-8 tracking-tight">
+                        I build <span class="text-purple-500">intelligent</span><br>solutions.
+                    </h1>
+                    <p class="text-gray-400 text-lg max-w-md mb-10 leading-relaxed">
+                        Final year B.Tech (CSE) student at Galgotias University. Specialized in Data Science, Python development, and Full-Stack applications.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#work" class="bg-white text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition-transform flex items-center gap-2">
+                            My Projects <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-purple-600/10 blur-[120px] rounded-full"></div>
+            </div>
+
+            <!-- PROFILE CARD (Photo Added Here) -->
+            <div class="lg:col-span-4 bento-card p-8 flex flex-col items-center justify-center text-center">
+                <div class="w-40 h-40 rounded-[2.5rem] overflow-hidden mb-6 ring-4 ring-white/5 bg-neutral-900">
+                    <!-- Ensure your image file is named profile.jpg in the same folder -->
+                    <img src="profile.jpg" alt="Ashutosh Kumar Gupta" class="w-full h-full object-cover object-top">
+                </div>
+                <h2 class="heading-font text-2xl font-bold mb-1 text-white">Ashutosh Kumar Gupta</h2>
+                <p class="text-purple-500 font-bold uppercase tracking-widest text-[10px] mb-6">Data Science & Developer • India</p>
+                
+                <div class="flex gap-4">
+                    <a href="https://github.com/Akash1666" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:text-purple-500 hover:border-purple-500/50 transition-all">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://leetcode.com/Akash_166" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:text-purple-500 hover:border-purple-500/50 transition-all">
+                        <i data-lucide="code-2" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/Akash Gupta" target="_blank" class="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center hover:text-purple-500 hover:border-purple-500/50 transition-all">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: SERVICES & PROJECTS -->
+        <div id="work" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Service: Data Science -->
+            <div class="bento-card p-10 group">
+                <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-8 group-hover:bg-purple-500 transition-colors duration-500">
+                    <i data-lucide="database" class="text-purple-500 group-hover:text-white transition-colors"></i>
+                </div>
+                <h3 class="heading-font text-2xl font-bold mb-4">Data Science</h3>
+                <ul class="text-gray-500 text-sm space-y-2 leading-relaxed">
+                    <li>○ Data cleaning & pre-processing</li>
+                    <li>○ Python visualization libraries</li>
+                    <li>○ Machine Learning model evaluation</li>
+                </ul>
+            </div>
+
+            <!-- Service: Development -->
+            <div class="bento-card p-10 group">
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-8 group-hover:bg-blue-500 transition-colors duration-500">
+                    <i data-lucide="code" class="text-blue-500 group-hover:text-white transition-colors"></i>
+                </div>
+                <h3 class="heading-font text-2xl font-bold mb-4">Web Dev</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Building responsive applications using HTML, CSS, JavaScript, and modern frameworks.</p>
+            </div>
+
+            <!-- Project Card -->
+            <div class="bento-card p-2 group cursor-pointer">
+                <div class="bg-black/40 rounded-[1.8rem] h-full p-8 flex flex-col justify-between min-h-[300px]">
+                    <div class="flex justify-between items-start">
+                        <h3 class="heading-font text-xl font-bold">Fraud Detection AI</h3>
+                        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center -rotate-45 group-hover:rotate-0 transition-transform duration-500">
+                            <i data-lucide="arrow-right" class="text-black w-5 h-5"></i>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">AI based system for detecting fraudulent online transactions.</p>
+                    <div class="rounded-2xl overflow-hidden border border-white/10 h-28 relative mt-4">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=600&auto=format&fit=crop" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECTION 3: FOOTER CTA -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <!-- Quick Stats -->
+            <div class="lg:col-span-4 bento-card p-10 flex flex-col justify-center">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <div class="text-4xl font-black heading-font text-white">7.5</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2 font-bold">CGPA (B.Tech)</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-black heading-font text-white">2026</div>
+                        <div class="text-[10px] text-gray-500 uppercase tracking-widest mt-2 font-bold">Graduation</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Big CTA -->
+            <div class="lg:col-span-8 bento-card custom-gradient p-10 md:p-14 flex flex-col md:flex-row justify-between items-center violet-glow">
+                <div class="text-center md:text-left mb-8 md:mb-0">
+                    <h2 class="heading-font text-3xl md:text-4xl font-black text-white mb-2">Let's work together.</h2>
+                    <p class="text-white/70">Reach out for collaborations or job opportunities.</p>
+                </div>
+                <a href="mailto:guitarakash87@gmail.com" class="bg-white text-black px-10 py-5 rounded-[1.5rem] font-black hover:scale-105 transition-transform shadow-2xl">
+                    Email Me
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
